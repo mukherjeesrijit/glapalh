@@ -166,8 +166,8 @@ def evaluate_model(model_path, cloud_file, splits_file, batch_size=32):
 
     return avg_loss, accuracy
 
-# output_model_path = rf"glapalh/model.pth"
-# splits_file = rf"glapalh/splits.csv"
-# cloud_file = rf"glapalh/cloud.csv" 
+# output_model_path = rf"model.pth"
+# splits_file = rf"splits.csv"
+# cloud_file = rf"cloud.csv" 
 # solve_model(cloud_file, splits_file, output_model_path, num_epochs=10, batch_size=32, patience=5)
 # print(evaluate_model(output_model_path, cloud_file, splits_file, batch_size=32))
