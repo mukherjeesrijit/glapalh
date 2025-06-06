@@ -1,0 +1,4 @@
+patient_id,image_path,mask_path,label
+patientid1,patientid1.nii.gz,patientid1_mask.nii.gz,1
+patientid2,patientid2.nii.gz,patientid2_mask.nii.gz,0
+patientid3,patientid3.nii.gz,patientid3_mask.nii.gz,1
