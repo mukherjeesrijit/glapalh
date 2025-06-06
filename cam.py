@@ -205,9 +205,9 @@ def viz_cam(input_patient_id, slice_num, model_path, cloud_file, splits_file, ba
 
                     display_cams(image, cam_L, cam_G, cam, mask, label)
 
-output_model_path = rf"glapalh/model.pth"
-splits_file = rf"glapalh/splits.csv"
-cloud_file = rf"glapalh/cloud.csv" 
-patient_id = "patientid3"
-slice_num = 5 
-viz_cam(patient_id, slice_num, output_model_path, cloud_file, splits_file, batch_size=1)
+# output_model_path = rf"glapalh/model.pth"
+# splits_file = rf"glapalh/splits.csv"
+# cloud_file = rf"glapalh/cloud.csv" 
+# patient_id = "patientid3"
+# slice_num = 5 
+# viz_cam(patient_id, slice_num, output_model_path, cloud_file, splits_file, batch_size=1)
