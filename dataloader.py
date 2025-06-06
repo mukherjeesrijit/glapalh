@@ -93,8 +93,8 @@ class ScanDataset2D(Dataset):
         patient_id, slice_idx = self.patient_info[idx]
         return img, mask, patient_id, slice_idx, label
 
-# splits_file = rf"glapalh/splits.csv"
-# cloud_file = rf"glapalh/cloud.csv" 
+# splits_file = rf"splits.csv"
+# cloud_file = rf"cloud.csv" 
 
 #dataset = ScanDataset2D( cloud_file=cloud_file, splits_file=splits_file, is_training=True, augment=False)
 
