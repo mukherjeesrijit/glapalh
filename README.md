@@ -1,30 +1,26 @@
-# **GLAPAL-H**  
-### *Global, Local And Parts Aware Learner for Hydrocephalus Infection Diagnosis in Low-Field MRI*  
-**IEEE Transactions on Biomedical Engineering**
+# **GLAPAL-H: Global, Local And Parts Aware Learner for Hydrocephalus Infection Diagnosis in Low-Field MRI**  
+**IEEE Transactions on Biomedical Engineering (2025)**
+
+---
+
+## 🎥 Tutorial
+
+* I will soon make a tutorial with the insight of the paper, and how to use the code.
+
+---
+
+## 📚 References
+
+1. Mukherjee, Srijit, et al. *"GLAPAL-H: Global, Local, And Parts Aware Learner for Hydrocephalus Infection Diagnosis in Low-Field MRI."*  
+   medRxiv (2025): 2025-05. [📄 Read on medRxiv](https://www.medrxiv.org/content/10.1101/2025.05.14.25327461v2)
 
 ---
 
 ## 🧠 Abstract
 
-Hydrocephalus, marked by abnormal cerebrospinal fluid (CSF) accumulation, poses a global pediatric neurosurgical challenge. In sub-Saharan Africa, post-infectious hydrocephalus (PIH) accounts for over 50% of cases, while non-post-infectious hydrocephalus (NPIH) arises from causes such as hemorrhage or congenital malformations. Accurate differentiation among healthy, PIH, and NPIH infants is vital for effective management, as surgery must sometimes be delayed during active infections.
-
-While CT imaging exposes children to ionizing radiation, low-field MRI offers a safer and more accessible alternative, particularly in resource-constrained settings. However, its low resolution presents diagnostic challenges. To address this, we propose **GLAPAL-H**, a *Global, Local, And Parts Aware Learner*, designed to robustly classify hydrocephalic etiology using low-field MRI.
-
-GLAPAL-H incorporates a multi-task architecture with global, local, and parts-aware branches. The model simultaneously segments brain tissue and CSF, using shallow CNNs for local features and deep CNNs for global features. It introduces domain-guided loss functions for each branch, capturing visual cues of hydrocephalic pathology. GLAPAL-H outperforms CT-based and state-of-the-art models in Two-Class (PIH vs. NPIH) and Three-Class (PIH vs. NPIH vs. Healthy) tasks, offering superior generalizability, interpretability, and speed—positioning it as a viable tool for rapid diagnosis in low-resource clinical settings.
-
----
+Hydrocephalus, marked by abnormal cerebrospinal fluid (CSF) accumulation, poses a global pediatric neurosurgical challenge, especially post-infectious hydrocephalus (PIH) in sub-Saharan Africa, which accounts for over 50% of cases, while non-post-infectious hydrocephalus (NPIH) stems from causes such ashemorrhage or congenital malformations; accurate differentiation among healthy, PIH, and NPIH infants is vital for effective management, as surgery may need to be deferred in active infections. While CT scans expose infants to ionizing radiation, low-field MRI offers a safer alternative, particularly in resource-constrained settings. However, the lower resolution of low-field MRI presents challenges for accurate diagnosis. To address the challenges of using low-field MRI for diagnosis, the study develops a custom approach that captures hydrocephalic etiology while simultaneously addressing quality issues encountered in low-field MRI. Specifically, we propose GLAPAL-H, a Global, Local, And Parts Aware Learner, which develops a multi-task architecture with global, local, and parts segmentation branches. The architecture segments images into brain tissue and CSF while using a shallow CNN for local feature extraction and develops a parallel deep CNN branch for global feature extraction. Three regularized training loss functions are developed — one for each of the global, local, and parts components. The global regularizer captures holistic features, the local focuses on fine details, and the parts regularizer learns soft segmentation masks that enable local features to capture hydrocephalic etiology. The study's results show that GLAPAL-H outperforms state-of-the-art alternatives, including CT-based approaches, for both Two-Class (PIH vs. NPIH) and Three-Class (PIH vs. NPIH vs. Healthy) classification tasks in accuracy, interpretability, and generalizability. GLAPAL-H highlights the potential of low-field MRI as a safer, low-cost alternative to CT imaging for pediatric hydrocephalus infection diagnosis and management. Practically, GLAPAL-H demonstrates robustness against the quantity and quality of  training imagery, enhancing its deployability. It further demonstrates computational efficiency, achieving reduced training times and low inference latency due to its etiology-guided learning design, making it suitable for rapid, scalable deployment in low-resource settings. We introduce the first domain-enriched AI approach for diagnosing infections in pediatric hydrocephalus using low-field MRI, a safer and 10 timesmore affordable alternative to CT scans, which pose radiation risks in children.---
 
 ## 🎯 Motivation
-
-- **Clinical Challenge**: Hydrocephalus demands early and precise differentiation between PIH, NPIH, and healthy infants, especially in sub-Saharan contexts.
-- **Imaging Barrier**: CT scans expose children to radiation risks. Low-field MRI offers a 10× cheaper, safer alternative—but suffers from quality issues.
-- **AI Opportunity**: Need for an explainable, efficient, and etiology-guided model that performs well on noisy, low-resolution MRI.
-
-![Motivation](./GLAPALH_files/motivation.png)
-
----
-
-## 🧩 GLAPAL-H: Model Overview
 
 GLAPAL-H consists of three key branches:
 
@@ -39,6 +35,13 @@ Each component is trained with a specialized loss:
 
 This design aligns with domain knowledge of disease manifestation, improving both **trust** and **performance**.
 
+![Motivation](./GLAPALH_files/motivation.png)
+
+---
+
+## 🧩 GLAPAL-H: Model Overview
+
+
 ![GLAPAL-H Architecture](./GLAPALH_files/model.png)
 
 ---
@@ -52,25 +55,3 @@ This design aligns with domain knowledge of disease manifestation, improving bot
 ![Results](./GLAPALH_files/results.png)
 
 ---
-
-## 🔍 Interpretability
-
-- Activation maps reveal **clinically meaningful regions** associated with infection.
-- Parts-aware attention boosts **explainability** and **clinical trust**.
-
-![Activation Maps](./GLAPALH_files/activationmap.png)
-
----
-
-## 🔗 Code Repository
-
-You can find the full PyTorch implementation of GLAPAL-H here:  
-[🔗 GitHub: mukherjeesrijit/glapalh](https://github.com/mukherjeesrijit/glapalh)
-
----
-
-## 📚 References
-
-1. Mukherjee, Srijit, et al. *"GLAPAL-H: Global, Local, And Parts Aware Learner for Hydrocephalus Infection Diagnosis in Low-Field MRI."*  
-   medRxiv (2025): 2025-05.  
-   [📄 Read on medRxiv](https://www.medrxiv.org/content/10.1101/2025.05.14.25327461v2)
