@@ -55,3 +55,13 @@ This design aligns with domain knowledge of disease manifestation, improving bot
 ![Results](./GLAPALH_files/results.png)
 
 ---
+
+## 🔍 Interpretability
+
+- Activation maps reveal **clinically meaningful regions** associated with infection.
+- Parts-aware attention boosts **explainability** and **clinical trust**.
+
+![Activation Maps](./GLAPALH_files/activationmap.png)
+
+---
+
