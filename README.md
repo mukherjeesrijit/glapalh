@@ -1,5 +1,4 @@
 # **GLAPAL-H: Global, Local And Parts Aware Learner for Hydrocephalus Infection Diagnosis in Low-Field MRI**  
-**IEEE Transactions on Biomedical Engineering (2025)**
 
 ---
 
