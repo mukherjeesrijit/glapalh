@@ -4,7 +4,8 @@
 
 ## 🎥 Tutorial
 
-* I will soon make a tutorial with the insight of the paper, and how to use the code.
+* [A 28 minutes' Tutorial for Domain-Experts](https://youtu.be/bvaHT2m4y3Q?si=lh9sL4PTJu2cShJq)
+* A coding-based tutorial is coming soon!!
 
 ---
 
