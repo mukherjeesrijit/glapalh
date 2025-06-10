@@ -11,7 +11,7 @@
 ## 📚 References
 
 1. (Free) Mukherjee, Srijit, et al. *"GLAPAL-H: Global, Local, And Parts Aware Learner for Hydrocephalus Infection Diagnosis in Low-Field MRI."*  medRxiv (2025): 2025-05. [📄 Read on medRxiv](https://www.medrxiv.org/content/10.1101/2025.05.14.25327461v2)
-2. (IEEE) S. Mukherjee et al., "GLAPAL-H: Global, Local, And Parts Aware Learner for Hydrocephalus Infection Diagnosis in Low-Field MRI," in IEEE Transactions on Biomedical Engineering, doi: 10.1109/TBME.2025.3578541. [📄 Read on IEEE]](https://ieeexplore.ieee.org/document/11029195)
+2. (IEEE) S. Mukherjee et al., "GLAPAL-H: Global, Local, And Parts Aware Learner for Hydrocephalus Infection Diagnosis in Low-Field MRI," in IEEE Transactions on Biomedical Engineering, doi: 10.1109/TBME.2025.3578541. [📄 Read on IEEE](https://ieeexplore.ieee.org/document/11029195)
 
 ---
 
