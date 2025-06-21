@@ -4,8 +4,11 @@
 
 ## 🎥 Tutorial
 
-* [A 28 minutes' Tutorial for Domain-Experts](https://youtu.be/bvaHT2m4y3Q?si=lh9sL4PTJu2cShJq)
-* A coding-based tutorial is coming soon!!
+<p align="center">
+  <a href="https://youtu.be/bvaHT2m4y3Q?si=lh9sL4PTJu2cShJq">
+    <img src="https://img.youtube.com/vi/bvaHT2m4y3Q/hqdefault.jpg" alt="A 28 minutes' Tutorial for Domain-Experts">
+  </a>
+</p>
 
 ---
 
